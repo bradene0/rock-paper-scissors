@@ -45,4 +45,23 @@
 .throws {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 2rem;
+    width: 50vw;
+}
+.chooseMove {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.reset {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #C3423F;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.result {
+    
 }
