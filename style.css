@@ -66,3 +66,16 @@
     margin-top: 20px;
     font-size: 1.2rem;
 }
+@media screen and (max-width: 612px) {
+    .title {
+        text-align: center;
+    }
+    .score {
+        position: absolute;
+        top: 202px;
+        width: 100vw;
+    }
+    .throws {
+        width: 100vw;
+    }
+}
