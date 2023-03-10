@@ -21,9 +21,28 @@
 }
 .score {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: absolute;
     top: 88px;
     z-index: 1;
-    width: 28vw;
+    width: 34vw;
+}
+.p-count, .c-count {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.43rem;
+}
+#rock, #paper, #scissors {
+    padding: 0.8rem;
+    border-radius: 10px;
+    outline: none;
+    width: 100px;
+    background: #9BC53D;
+    border-color: #9BC53D;
+    cursor: pointer;
+    border: none;
+}
+.throws {
+    display: flex;
+    justify-content: space-evenly;
 }
