@@ -106,3 +106,4 @@ const gameOver = (playerOptions, movesLeft) => {
         window.location.reload();
     })
 }
+playGame();
