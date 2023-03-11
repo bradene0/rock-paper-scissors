@@ -74,3 +74,35 @@ const winner = (player, computer) => {
         }
     }
 }
+const gameOver = (playerOptions, movesLeft) => {
+    const chooseMove = document.querySelector('move');
+    const result = document.querySelector('.result');
+    const reloadButton = document.querySelector('.reload');
+
+    playerOptions.forEach(option => {
+        option.style.display ='none';
+    })
+    chooseMove.innerText = 'Game Over!'
+    movesLeft.style.display = 'none';
+
+    if(playerScore > computerScore){
+        result.style.fontSize = '2rem';
+        result.innerText = 'YOU WIN!!!';
+        result.style.color = '#5bc0eb';
+    }
+    else if( playerScore < computerScore){
+        result.style.fontSize = '2rem';
+        result.innerText = 'You Lose!!';
+        result.style.color = '#c3423f';
+    }
+    else{
+        result.style.fontsize = '2rem';
+        result.innerText = 'You Tied!!!!!!'
+        result.style.color = '#fde74c'
+    }
+    reloadButton.innerText = 'Restart';
+    reloadButton.style.display = 'flex'
+    reloadButton.addEventListener('click', () =>{
+        window.location.reload();
+    })
+}
