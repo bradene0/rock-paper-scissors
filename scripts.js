@@ -11,7 +11,7 @@ const playGame = () => {
     const playerOptions = [rockButton,paperButton,scissorsButton];
     const computerOptions = ['rock', 'paper', 'scissors']
 }
-playerOptions.forEach(option => {
+    playerOptions.forEach(option => {
     option.addEventListener('click', function() {
 
         const movesLeft = document.querySelector('.movesleft');
