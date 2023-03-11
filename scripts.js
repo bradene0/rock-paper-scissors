@@ -28,3 +28,38 @@ playerOptions.forEach(option => {
         }
     })
 })
+
+const winner = (player, computer) => {
+    const result = document.querySelector('result');
+    const playerScoreBoard = document.querySelector('.p-count');
+    const computerScoreBoard = document.querySelector('.c-count');
+    player = player.toLowercase();
+    computer = computer.toLowerCase();
+    if(player === computer){
+        result.textContent = 'Tie'
+    }
+    else if(player == 'rock') {
+        if(computer == 'paper') {
+            result.textContent = 'Computer Wins!';
+            computerScore++;
+            computerScoreBoard.textContent = computerScore;
+
+        }else{
+            result.textContent = 'Player Wins!!';
+            playerScore++;
+            playerScoreBoard.textContent = playerScore;
+        }
+    }
+    else if(player == 'scissors'){
+        if(computer == 'rock') {
+            result.textContent = 'Computer Wins!!';
+            computerScore++
+            computerScoreBoard.textContent = computerScore;
+
+        }else{
+            result.textContent = 'Player Wins!!';
+            playerScore++;
+            playerScoreBoard.textContent =playerScore;
+        }
+    }
+}
