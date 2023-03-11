@@ -9,14 +9,14 @@ const playGame = () => {
     const paperButton = document.querySelector('.paper');
     const scissorsButton = document.querySelector('.scissors');
     const playerOptions = [rockButton,paperButton,scissorsButton];
-    const computerOptions = ['rock', 'paper', 'scissors']
-}
+    const computerOptions = ['rock','paper','scissors']
+
 playerOptions.forEach(option => {
     option.addEventListener('click', function() {
 
         const movesLeft = document.querySelector('.movesleft');
         moves ++;
-        movesLeft.innertext = `Remaining Moves: ${10-moves}`;
+        movesLeft.innerText = `Remaining Moves: ${10-moves}`;
 
         const choiceNumber = Math.floor(Math.random()*3);
         const computerChoice = computerOptions[choiceNumber];
@@ -28,7 +28,7 @@ playerOptions.forEach(option => {
         }
     })
 })
-
+}
 const winner = (player, computer) => {
     const result = document.querySelector('result');
     const playerScoreBoard = document.querySelector('.p-count');
