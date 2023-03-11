@@ -7,5 +7,7 @@ const game = () => {
 const playGame = () => {
     const rockButton = document.querySelector('.rock');
     const paperButton = document.querySelector('.paper');
-    const scissorsButton = document.querySelector('.scissors')
+    const scissorsButton = document.querySelector('.scissors');
+    const playerOptions = [rockButton,paperButton,scissorsButton];
+    const computerOptions = ['rock', 'paper', 'scissors']
 }
