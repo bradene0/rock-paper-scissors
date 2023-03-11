@@ -16,7 +16,7 @@ playerOptions.forEach(option => {
 
         const movesLeft = document.querySelector('.movesleft');
         moves ++;
-        movesLeft.innertext = `Moves Left: ${10-moves}`;
+        movesLeft.innertext = `Remaining Moves: ${10-moves}`;
 
         const choiceNumber = Math.floor(Math.random()*3);
         const computerChoice = computerOptions[choiceNumber];
