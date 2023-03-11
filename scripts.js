@@ -23,8 +23,8 @@ playerOptions.forEach(option => {
 
         winner(this.innerText, computerChoice)
 
-        if(moves == 100) {
-            gameOver(playerOptions, movesLeft);
+        if(throws == 100) {
+            gameOver(playerOptions, movesRemaining);
         }
     })
 })
