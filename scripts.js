@@ -12,7 +12,7 @@ const playGame = () => {
     const computerOptions = ['rock','paper','scissors']
 
 playerOptions.forEach(option => {
-    option.addEventListener('click',function() {
+    option.addEventListener('click', function() {
 
         const movesLeft = document.querySelector('.movesremaining');
         moves ++;
