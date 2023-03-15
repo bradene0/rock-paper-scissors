@@ -4,7 +4,7 @@ const game = () => {
     let moves = 0;
 
 
-const playGame = () => {
+const playGame = ()=> {
     const rockButton = document.querySelector('.rock');
     const paperButton = document.querySelector('.paper');
     const scissorsButton = document.querySelector('.scissors');
