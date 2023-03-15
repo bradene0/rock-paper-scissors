@@ -14,7 +14,7 @@ const playGame = ()=> {
 playerOptions.forEach(option => {
     option.addEventListener('click', function() {
 
-        const movesLeft = document.querySelector('.movesremaining');
+        const movesLeft = document.querySelector('.movesRemaining');
         moves ++;
         movesLeft.innerText = `Remaining Moves: ${10-moves}`;
 
